@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Collector Interface - Full Bins</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="/static/collector_script.js" defer></script>
+</head>
+<body>
+    <h2>Collector: Full Bin Monitoring</h2>
+
+    <!-- Button to fetch full bins -->
+    <div class="buttons">
+        <button id="showFullBins">Show All Full Bins</button>
+    </div>
+
+    <hr>
+
+    <!-- List to display full bin information -->
+    <h3>Full Bins</h3>
+    <ul id="fullBinsList">
+        <!-- Full bins will be dynamically added here -->
+    </ul>
+
+    <hr>
+
+    <!-- Form to add a new bin location -->
+    <h3>Add a New Bin</h3>
+    <form id="addBinForm">
+        <label>Level (%)</label>
+        <input type="number" id="level" placeholder="Level (%)" min="0" max="100" required>
+
+        <label>Status</label>
+        <select id="status" required>
+            <option value="Empty">Empty</option>
+            <option value="Partially Full">Partially Full</option>
+            <option value="Full">Full</option>
+        </select>
+
+        <label>Latitude</label>
+        <input type="number" id="latitude" placeholder="Latitude" step="0.0001" required>
+        <select id="latDirection">
+            <option value="N">N</option>
+            <option value="S">S</option>
+        </select>
+
+        <label>Longitude</label>
+        <input type="number" id="longitude" placeholder="Longitude" step="0.0001" required>
+        <select id="lonDirection">
+            <option value="E">E</option>
+            <option value="W">W</option>
+        </select>
+
+        <button type="submit">Add Bin</button>
+    </form>
+</body>
+</html>

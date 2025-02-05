@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Interface - Smart Waste Bin Finder</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" defer></script>
+    <script src="/static/user_script.js" defer></script>
+</head>
+<body>
+    <h2>Smart Waste Bin Finder</h2>
+    <div id="map" style="height: 500px; width: 100%;"></div>
+    <div class="buttons">
+        <button onclick="findNearestBin()">Find Nearest Bin</button>
+        <button onclick="scanCode()">Scan Bin Code</button>
+        <button onclick="updateBinStatus()">Update Bin Status</button>
+    </div>
+</body>
+</html>

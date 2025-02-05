@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #121212;
+    color: #fff;
+    line-height: 1.6;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: #00ff99;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#map {
+    height: 70vh;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 150, 0.4);
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 30px;
+}
+
+button {
+    background: linear-gradient(145deg, #343a40, #212529);
+    color: #fff;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 10px;
+}
+
+button:hover {
+    background: linear-gradient(145deg, #212529, #343a40);
+    box-shadow: 0 4px 10px rgba(0, 255, 150, 0.2);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+input, select {
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #00ff99;
+}
